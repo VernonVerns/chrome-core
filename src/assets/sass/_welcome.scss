@@ -1,0 +1,35 @@
+#welcome_page {
+    .hero-part {
+        .hero-img {
+            height: 50vh;
+            background-color: rebeccapurple;
+            width: 100vw;
+            background-image: url("../imgs/hero-img.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .text-part {
+            padding: 40px 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 40vh;
+
+            h2 {
+                font-size: clamp(35px, 2.5vw, 50px);
+                font-weight: 400;
+                margin: 0;
+                color: $dark-color;
+
+                span {
+                    font-weight: 800;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

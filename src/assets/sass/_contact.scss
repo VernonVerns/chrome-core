@@ -1,0 +1,90 @@
+#contact_page {
+
+    .contact-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2em;
+        padding: 6em;
+
+        .contact-card {
+            border: 2px solid $bg-color;
+            border-radius: 8px;
+            width: 270px;
+            padding: 1em;
+
+            .icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 6px;
+                border: 2px solid $bg-color;
+                margin-bottom: 40px;
+                color: $primary-color;
+            }
+
+            .card-details {
+                h5 {
+                    margin: 0;
+                    font-size: 18px;
+                    color: $dark-color;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin: 0;
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    font-size: 16px;
+                    color: $dark-color;
+                    font-weight: 500;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .form-and-map {
+        iframe {
+            min-height: 450px;
+            height: 100%;
+        }
+
+        .form-side {
+            padding: 0 6em;
+
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px 15px;
+                border: 1px solid $bg-color;
+                border-radius: 8px;
+                outline: none;
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+            }
+
+            .submit-btn {
+                font-size: 16px;
+                padding: 10px 30px;
+                outline: none;
+                background-color: $primary-color;
+                color: #dcc883;
+                display: inline-block;
+                border-radius: 8px;
+                border: none;
+
+            }
+        }
+    }
+}
