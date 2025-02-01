@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 60px;
 
     .nav-brand {
         h4 {
@@ -205,7 +205,7 @@ body {
     min-height: 50vh;
     height: 100%;
     display: grid;
-    grid-template-columns: 55vw 45vw;
+    grid-template-columns: auto 45vw;
     align-items: center;
     background-color: $bg-color;
 
@@ -252,7 +252,43 @@ body {
     }
 }
 
+.cta-component {
+    background-color: $secondary-color;
+    padding: 5em 12em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .text-side-cta {
+        width: 80%;
+        h4 {
+            font-size: 35px;
+            font-weight: 600;
+            color: $white-color
+        }
+    
+        p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 0;
+        }
+    }
+
+    .contact-btn {
+        background-color: $white-color;
+        color: $primary-color;
+        padding: 15px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        outline: none;
+        border-radius: 8px;
+        font-weight: 600;
+    }
+}
+
 @import "~bootstrap/scss/bootstrap";
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @import 'welcome';
-@import 'contact'
+@import 'contact';
+@import 'about';

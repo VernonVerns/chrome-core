@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import PageHeroComponent from '../components/PageHeroComponent'
 
-const conatctInfo = [
+const contactInfo = [
     {
         id: 1,
         contactName: "Contact sales",
@@ -39,15 +39,13 @@ const conatctInfo = [
 const ContactPage = () => {
     return (
         <div id='contact_page'>
-            <div className="page-hero">
-                <PageHeroComponent
-                    pageTitle='Contact us'
-                    shortDesc='We’re here to assist with any questions or inquiries. Choose the category below that best describes your needs, and our team will ensure your message reaches the right place.'
-                    path='Contact'
-                />
-            </div>
+            <PageHeroComponent
+                pageTitle='Contact us'
+                shortDesc='We’re here to assist with any questions or inquiries. Choose the category below that best describes your needs, and our team will ensure your message reaches the right place.'
+                path='Contact'
+            />
             <div className='contact-cards'>
-                {conatctInfo.map((contact) => (
+                {contactInfo.map((contact) => (
                     <div className="contact-card" key={contact.id}>
                         <div className='icon-container'>
                             <i className={`bi ${contact.contactIcon}`}></i>

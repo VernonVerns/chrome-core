@@ -2,11 +2,34 @@
     .hero-part {
         .hero-img {
             height: 50vh;
-            background-color: rebeccapurple;
-            width: 100vw;
+            width: 100%;
             background-image: url("../imgs/hero-img.jpg");
             background-position: center;
             background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 2em 4em;
+
+            .inner-text {
+                width: clamp(40%, 2vw, 100%);
+
+                h4 {
+                    font-size: 50px;
+                    color: $white-color;
+                    margin-bottom: 1em;
+                }
+
+                .learn-more-btn {
+                    background-color: $primary-color;
+                    color: $light-color;
+                    padding: 15px 25px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    outline: none;
+                    border-radius: 8px;
+                    font-weight: 600;
+                }
+            }
         }
 
         .text-part {
@@ -15,12 +38,14 @@
             flex-direction: row;
             align-items: center;
             height: 40vh;
+            background-color: $primary-color;
+
 
             h2 {
                 font-size: clamp(35px, 2.5vw, 50px);
                 font-weight: 400;
                 margin: 0;
-                color: $dark-color;
+                color: $white-color;
 
                 span {
                     font-weight: 800;
@@ -29,7 +54,12 @@
 
             p {
                 font-size: 20px;
+                color: $white-color;
             }
         }
+    }
+
+    .service-list {
+        padding: 4em 6em;
     }
 }
