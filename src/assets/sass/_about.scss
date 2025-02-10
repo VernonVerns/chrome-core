@@ -1,6 +1,12 @@
 #about_page {
     .about-content {
         padding: 4em 6em;
+
+        .about-img {
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
     }
 
     .why-us {

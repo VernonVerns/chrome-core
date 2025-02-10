@@ -26,10 +26,13 @@ body {
     padding: 20px 60px;
 
     .nav-brand {
-        h4 {
+        .word-logo {
+            font-size: 24px;
             margin: 0;
-            font-weight: 600;
+            font-weight: 800;
             color: $dark-color;
+            text-decoration: none;
+            outline: none;
         }
     }
 
@@ -292,3 +295,5 @@ body {
 @import 'welcome';
 @import 'contact';
 @import 'about';
+@import 'ourBusiness';
+@import 'governance';

@@ -6,17 +6,23 @@
             background-image: url("../imgs/hero-img.jpg");
             background-position: center;
             background-size: cover;
-            display: flex;
-            align-items: center;
-            padding: 2em 4em;
 
             .inner-text {
                 width: clamp(40%, 2vw, 100%);
+                background-color: rgba(0,0,0,0.3);
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                padding: 2em 5em;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
 
                 h4 {
                     font-size: 50px;
                     color: $white-color;
                     margin-bottom: 1em;
+                    width: 50%;
                 }
 
                 .learn-more-btn {
@@ -38,14 +44,14 @@
             flex-direction: row;
             align-items: center;
             height: 40vh;
-            background-color: $primary-color;
+            background-color: #E7F0DC;
 
 
             h2 {
                 font-size: clamp(35px, 2.5vw, 50px);
                 font-weight: 400;
                 margin: 0;
-                color: $white-color;
+                color: $primary-color;
 
                 span {
                     font-weight: 800;
@@ -54,7 +60,7 @@
 
             p {
                 font-size: 20px;
-                color: $white-color;
+                color: $primary-color;
             }
         }
     }

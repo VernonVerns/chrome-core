@@ -18,7 +18,7 @@ const Welcome = () => {
                     </div>
                     <div className="col-sm-6">
                         <p>
-                            ChromeCore Minerals is a dynamic and forward-thinking South African company operating at the core of the mining sector. We pride ourselves on being a catalyst for growth within the industry, contributing significantly to the nation’s economy while upholding the highest standards of excellence and sustainability.
+                            ChromeCore Minerals is a forward-thinking South African mining company specializing in chrome tailings processing and beneficiation. Our operations are guided by a vision to develop a fully integrated chrome mining and beneficiation business while upholding the highest standards of sustainability, operational excellence, and community empowerment.
                         </p>
                     </div>
                 </div>
@@ -28,12 +28,9 @@ const Welcome = () => {
                     <div className="col-sm-12">
                         <h4>Services Here</h4>
                     </div>
-                    <div className="col-sm-6">
-
+                    <div className='card-container'>
+                        
                     </div>
-                    <div className="col-sm-6"></div>
-                    <div className="col-sm-6"></div>
-                    <div className="col-sm-6"></div>
                 </div>
             </div>
             <CTAComponent />

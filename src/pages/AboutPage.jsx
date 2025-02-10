@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeroComponent from '../components/PageHeroComponent';
-import ImgDefault from "../assets/imgs/hero-img.jpg"
+import ImgDefault from "../assets/imgs/img_3.jpg"
 import CTAComponent from '../components/CTAComponent';
 
 const AboutPage = () => {
@@ -8,7 +8,7 @@ const AboutPage = () => {
         <div id='about_page'>
             <PageHeroComponent
                 pageTitle='About us'
-                shortDesc='With a steadfast focus on operational excellence and environmental stewardship, ChromeCore Minerals is shaping the future of mining in South Africa, making us not just an employer of choice, but a partner in progress for the nation.'
+                shortDesc='With a commitment to ethical business practices and community support, ChromeCore emphasizes teamwork, empowerment, and operational efficiency. The company aims to establish a fully integrated chrome mining operation and values growth, compliance, and creating a safe working environment.'
                 path="About"
             />
             <div className="about-content">
@@ -16,35 +16,31 @@ const AboutPage = () => {
                     <div className="col-sm-12">
                         <h4 className='sub-title'>Overview</h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nobis nisi dicta vel sit, ducimus doloribus unde debitis laudantium nostrum est, alias dolorem nam rem odit eaque quis impedit reiciendis!
-                            Dolor quidem sed, enim omnis culpa natus eos vero inventore corporis unde architecto quae quisquam cumque eum ratione eius tempore, tempora atque assumenda consectetur recusandae commodi mollitia nihil? Pariatur, eveniet?
-                            Possimus nemo voluptatum porro natus explicabo, fugit aspernatur earum maxime culpa nulla sunt, fugiat quisquam maiores blanditiis laudantium quam reprehenderit quae. 
+                            ChromeCore Minerals is a cutting-edge mining company dedicated to chrome tailings processing and beneficiation. With a focus on efficiency, sustainability, and technological innovation, we operate a high-performance chrome wash plant designed to maximize recovery and output. Our strategic approach ensures reliable sourcing, optimized processing, and long-term growth in the chrome mining sector. 
                         </p>
                         <p>
-                            At, numquam harum hic explicabo tempore in labore minus!
-                            Aliquam harum explicabo illum modi obcaecati blanditiis qui accusantium, numquam voluptas quibusdam accusamus dignissimos, facilis veritatis eligendi porro totam ea quasi aspernatur perspiciatis officia dolorum veniam praesentium. Culpa, doloremque repellat?
-                            Dolores qui laudantium sapiente? Culpa obcaecati quibusdam atque asperiores possimus fuga dicta eos impedit, distinctio numquam aperiam quas doloremque corporis reiciendis voluptatum necessitatibus tenetur architecto cum nesciunt nostrum harum doloribus.
+                            Driven by a commitment to excellence, we continuously enhance our operations through innovation, supply chain optimization, and sustainable practices. Our long-term vision includes expanding into full-scale chrome mining while upholding responsible mining standards and contributing to South Africa’s economic growth.
                         </p>
                     </div>
                     <div className="col-sm-12">
-                        <img src={ImgDefault} alt="company mine" width="100%"/>
+                        <img src={ImgDefault} className='about-img' alt="company mine" width="100%"/>
                     </div>
                     <div className='col-sm-12'>
                         <h4 className='sub-title'>Company history</h4>
                         <p>
-                            Founded with a vision to redefine chrome mining in South Africa, ChromeCore Minerals has steadily grown into a trusted industry player. Over the years, we have expanded our operations, adopted cutting-edge mining technologies, and built strong partnerships within the sector. Our journey has been marked by resilience, expertise, and a commitment to sustainable mining.
+                            Founded in June 2023 through a strategic partnership between ESP Mining, True Solutions Spec, and Lemosang Consulting, ChromeCore Minerals was established to revolutionize chrome tailings processing and beneficiation in South Africa. With a clear vision for sustainable and efficient mining, we have rapidly evolved from concept to a fully operational chrome wash plant, optimizing output and recovery.
                         </p>
                         <p>
-                        At, numquam harum hic explicabo tempore in labore minus! Aliquam harum explicabo illum modi obcaecati blanditiis qui accusantium, numquam voluptas quibusdam accusamus dignissimos, facilis veritatis eligendi porro totam ea quasi aspernatur perspiciatis officia dolorum veniam praesentium. Culpa, doloremque repellat? Dolores qui laudantium sapiente? Culpa obcaecati quibusdam atque asperiores possimus fuga dicta eos impedit, distinctio numquam aperiam quas doloremque corporis reiciendis voluptatum necessitatibus tenetur architecto cum nesciunt nostrum harum doloribus.
+                            From the outset, our focus has been on innovation, operational excellence, and building strong supplier and buyer networks. As we continue to grow, our commitment to ethical sourcing, environmental sustainability, and industry-leading efficiency remains at the core of everything we do. Looking ahead, we aim to expand into full-scale chrome mining, ensuring long-term value for our stakeholders and the communities we operate in.
                         </p>
                     </div>
                     <div className="col-sm-6">
                         <h4 className='sub-title'>Our Mission</h4>
-                        <p>To responsibly extract and process chrome while driving innovation, sustainability, and economic empowerment in South Africa and beyond. We are committed to creating long-term value for our stakeholders, employees, and the communities in which we operate.</p>
+                        <p>At ChromeCore Minerals, we are dedicated to responsibly extracting and processing chrome while fostering innovation, sustainability, and economic empowerment. Our mission is to create lasting value for our stakeholders, employees, and the communities we serve by prioritizing ethical mining practices, operational efficiency, and environmental responsibility.</p>
                     </div>
                     <div className="col-sm-6">
                         <h4 className='sub-title'>Our Vision</h4>
-                        <p>To be the most trusted and innovative chrome mining company in Africa, setting new industry benchmarks in environmental stewardship, operational excellence, and community impact.</p>
+                        <p>We aspire to be Africa’s most trusted and innovative chrome mining company, setting new industry standards in environmental stewardship, operational excellence, and community development. Through continuous growth and technological advancements, we aim to lead the future of sustainable chrome mining.</p>
                     </div>
                 </div>
             </div>
@@ -54,21 +50,23 @@ const AboutPage = () => {
                         <div className='col-sm-6'>
                             <h4 className='sub-title'>Core Values</h4>
                             <ul>
-                                <li>Integrity – We conduct business with honesty, transparency, and accountability</li>
-                                <li>Sustainability – We prioritize environmental responsibility and ethical mining practices.</li>
-                                <li>Innovation – We embrace new technologies to enhance efficiency and safety.</li>
-                                <li>Excellence – We are committed to the highest operational and safety standards.</li>
-                                <li>Community Empowerment – We invest in local communities through job creation, education, and social initiatives.</li>
+                                <li>Integrity & Transparency: This involves ethical business practices at every level.</li>
+                                <li>Teamwork: Emphasizing collaboration for operational success.</li>
+                                <li>Total Commitment: Showing dedication to industry excellence.</li>
+                                <li>Empowerment: Providing growth opportunities for employees and stakeholders</li>
+                                <li>Urgency & Accuracy: Highlighting timely and precise execution</li>
+                                <li>Time: Focusing on efficiency in operations and decision-making</li>
                             </ul>
                         </div>
                         <div className='col-sm-6'>
                             <h4 className='sub-title'>Why Choose ChromeCore Minerals?</h4>
                             <ul>
-                                <li>Industry-leading expertise in chrome mining</li>
-                                <li>Commitment to sustainability and ethical mining</li>
-                                <li>Advanced technology and innovation-driven processes</li>
-                                <li>Strong community involvement and job creation</li>
-                                <li>Reliable supplier of high-quality chrome products</li>
+                                <li>Forward-Thinking Approach: ChromeCore Minerals was founded in June 2023 and focuses on sustainability, innovation, and contributing to South Africa’s mining sector.</li>
+                                <li>Strategic Positioning: The company is strategically positioned to optimize output and efficiency with a state-of-the-art chrome wash plant.</li>
+                                <li>Integrated Vision: ChromeCore Minerals aims to establish a fully integrated chrome mining and beneficiation operation.</li>
+                                <li>Social Responsibility: The company is dedicated to supporting local communities through employment creation, skills development, sustainable environmental practices, and community engagement.</li>
+                                <li>Comprehensive Compliance: ChromeCore Minerals holds all necessary certifications and permits for legal and responsible operation, including Environmental Impact Assessment (EIA), Water Use License (WUL), Health and Safety Certifications, and more.</li>
+                                <li>Commitment to Core Values: The leadership is committed to integrity, transparency, teamwork, total commitment, empowerment, urgency, and accuracy.</li>
                             </ul>
                         </div>
                     </div>

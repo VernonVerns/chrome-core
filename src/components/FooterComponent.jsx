@@ -19,21 +19,20 @@ const FooterComponent = () => {
                             <div className="col-sm-6">
                                 <h6>Get in touch</h6>
                                 <address>
-                                    Shefferton Complex,<br />
-                                    6 Zandvliet Dr,<br />
-                                    East Rural, Kraaifontein,<br />
-                                    Cape Town, 7570
+                                    20 Oldens Way,<br/>
+                                    Kelvin,<br/>
+                                    Sandton, 2090
                                 </address>
-                                <p className='tel-link'><a href="tel:+27156789234">+27156789234</a></p>
+                                <p className='tel-link'><a href="tel:+27734748606">073 474 8606</a> / <a href="tel:+27721365012">072 136 5012</a></p>
                                 <Link to="/contact-us" className='footer-quick-link'>Contact us <span><i className='bi bi-arrow-right'></i></span></Link>
                             </div>
                             <div className="col-sm-6">
                                 <h6>Quick Links</h6>
                                 <ul className='quick-links'>
-                                    <li><Link to="/">Our Business</Link></li>
-                                    <li><Link to="/">Governance</Link></li>
-                                    <li><Link to="/">Our People</Link></li>
-                                    <li><Link to="/">Social Responsibility</Link></li>
+                                    <li><Link to="/our-business">Our Business</Link></li>
+                                    <li><Link to="/governance">Governance</Link></li>
+                                    <li><Link to="/our-people">Our People</Link></li>
+                                    <li><Link to="/social-responsibility">Social Responsibility</Link></li>
                                 </ul>
                                 <ul className='social-links'>
                                     <li><a href="http://" target="_blank" rel="noopener noreferrer"><i className='bi bi-facebook'></i></a></li>

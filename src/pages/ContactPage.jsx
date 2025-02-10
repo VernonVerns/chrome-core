@@ -16,7 +16,7 @@ const contactInfo = [
         contactName: "Chat to support",
         contactDesc: "We're here to help.",
         contactType: "email",
-        contact: "info@chromecore.co.za",
+        contact: "info.chromecore@gmail.com",
         contactIcon: "bi-envelope",
     },
     {
@@ -24,7 +24,7 @@ const contactInfo = [
         contactName: "Visit us",
         contactDesc: "Visit our office HQ.",
         contactType: "url",
-        contact: "https://maps.app.goo.gl/zF3uUwAoRkJYRAET7",
+        contact: "https://maps.app.goo.gl/RM7ZmkCbHUuqqJU98",
         contactIcon: "bi-geo-alt",
     },
     {
@@ -32,7 +32,7 @@ const contactInfo = [
         contactName: "Call us",
         contactDesc: "Mon-Fri from 8am to 5pm",
         contactType: "tel",
-        contact: "+27122945693",
+        contact: "+27734748606",
         contactIcon: "bi-telephone",
     },
 ]
@@ -62,7 +62,7 @@ const ContactPage = () => {
                 <div className='row'>
                     <div className="col-sm-6">
                         <div className="map-side">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14333.843166723535!2d28.067556977777482!3d-26.083872899560824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95731eb6e4e3ab%3A0x6a52bd98aed2fe7b!2sMorningside%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1736681148183!5m2!1sen!2sza" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2130.91298847353!2d28.089852298491827!3d-26.074288761339158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95729366d57b41%3A0xe59aaa5083efde60!2s20%20Oldens%20Way%2C%20Kelvin%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1739015095347!5m2!1sen!2sza" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div className="col-sm-6">
