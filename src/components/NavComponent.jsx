@@ -18,9 +18,9 @@ const NavComponent = () => {
                     <li className="menu-item">
                         <NavLink to="/governance">Governance</NavLink>
                     </li>
-                    <li className="menu-item">
+                    {/* <li className="menu-item">
                         <NavLink to="/our-people">Our People</NavLink>
-                    </li>
+                    </li> */}
                     <li className="menu-item">
                         <NavLink to="/social-responsibility">Social Responsibility</NavLink>
                     </li>
