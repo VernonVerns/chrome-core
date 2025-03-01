@@ -13,7 +13,7 @@ const GovernancePage = () => {
         />
         <div className='governance-content'>
             <div className='board-content'>
-                <div className="row gx-5">
+                <div className="row gx-4">
                     <div className="col-12 header-part">
                         <h2>Board of Directors & Leadership</h2>
                         <p>
@@ -44,7 +44,7 @@ const GovernancePage = () => {
                 </div>
             </div>
             <div className='compliance-content'>
-                <div className="row">
+                <div className="row gy-4">
                     <div className="col-12 header-part">
                         <h2>Corporate Policies & Compliance</h2>
                         <p>

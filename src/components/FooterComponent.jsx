@@ -5,7 +5,7 @@ const FooterComponent = () => {
     return (
         <div id='footer_component'>
             <div className='top-bar'>
-                <div className="row justify-content-between">
+                <div className="row justify-content-between gy-4">
                     <div className="col-sm-12">
                         <h3>ChromeCore</h3>
                     </div>
@@ -15,7 +15,7 @@ const FooterComponent = () => {
                         <Link to="/about-us" className='footer-quick-link'>About us <span><i className='bi bi-arrow-right'></i></span></Link>
                     </div>
                     <div className="col-sm-4">
-                        <div className="row">
+                        <div className="row gy-4">
                             <div className="col-sm-6">
                                 <h6>Get in touch</h6>
                                 <address>

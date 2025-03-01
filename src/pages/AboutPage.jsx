@@ -46,7 +46,7 @@ const AboutPage = () => {
             </div>
             <div className='why-us'>
                 <div className="bg-overlay">
-                    <div className='row justify-content-center'>
+                    <div className='row gy-4 justify-content-center'>
                         <div className='col-sm-6'>
                             <h4 className='sub-title'>Core Values</h4>
                             <ul>

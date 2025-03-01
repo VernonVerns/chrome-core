@@ -31,3 +31,51 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    #about_page {
+        .about-content {
+            padding: 3em 4em;
+            .about-img {
+                height: 350px;
+            }
+        }
+        .why-us {
+            .bg-overlay {
+                padding: 3em 4em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #about_page {
+        .about-content {
+            padding: 2em 3em;
+            .about-img {
+                height: 300px;
+            }
+        }
+        .why-us {
+            .bg-overlay {
+                padding: 2em 3em;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #about_page {
+        .about-content {
+            padding: 1.5em 2em;
+            .about-img {
+                height: 250px;
+            }
+        }
+        .why-us {
+            .bg-overlay {
+                padding: 1.5em 2em;
+            }
+        }
+    }
+}

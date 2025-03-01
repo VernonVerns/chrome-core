@@ -80,7 +80,72 @@ body {
             }
         }
     }
+
+    .menu-toggle-btn {
+        display: none;
+    }
+
+    // Mobile-specific styles
+    @media (max-width: 768px) {
+        #navigation_bar {
+            padding: 20px;
+        }
+        .menu-container {
+            display: none; // Hide menu container by default
+
+            &.open {
+                display: flex; // Show menu when open
+                flex-direction: column;
+                position: absolute;
+                top: 80px; // Adjust this based on your layout
+                left: 0;
+                right: 0;
+                background-color: $bg-color; // Use your background color
+                padding: 1em;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Optional shadow effect
+            }
+
+            ul.nav-menu {
+                flex-direction: column;
+                width: 100%;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+
+            ul.sub-menu {
+                flex-direction: column;
+                width: 100%;
+
+                a {
+                    display: block;
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .menu-toggle-btn {
+            display: block;
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            color: $primary-color;
+            cursor: pointer;
+            padding: 0;
+            outline: none;
+        }
+    }
 }
+
+@media (max-width: 768px) {
+    #navigation_bar {
+        padding: 20px 30px;
+    }
+}
+
 
 #footer_component {
     background-color: $bg-color;
@@ -351,3 +416,4 @@ body {
 @import 'ourBusiness';
 @import 'governance';
 @import 'socialResponsibility';
+@import 'responsiveness';

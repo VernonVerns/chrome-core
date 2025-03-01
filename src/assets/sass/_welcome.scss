@@ -200,3 +200,144 @@
     }
     
 }
+
+@media (max-width: 1024px) {
+    #welcome_page {
+        .hero-part {
+            .hero-img {
+                height: 50vh;
+                .inner-text {
+                    padding: 1.5em 3em;
+                    h4 {
+                        font-size: 40px;
+                        width: 60%;
+                    }
+                }
+            }
+            .text-part {
+                padding: 30px 40px;
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .quick-facts {
+            padding: 0 3em;
+            .fact-grid {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+
+        .why-choose-us, .services {
+            padding: 3em 4em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #welcome_page {
+        .hero-part {
+            .hero-img {
+                height: 50vh;
+                .inner-text {
+                    padding: 1em 2em;
+                    h4 {
+                        font-size: 28px;
+                        width: 80%;
+                    }
+                }
+            }
+            .text-part {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 30px;
+                height: auto;
+
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .quick-facts {
+            padding: 0 2em;
+            .fact-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                h4 {
+                    font-size: 30px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .why-choose-us, .services {
+            padding: 2em;
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome_page {
+        .hero-part {
+            .hero-img {
+                height: 50vh;
+                .inner-text {
+                    padding: 1em;
+                    h4 {
+                        font-size: 28px;
+                        width: 90%;
+                    }
+                }
+            }
+            .text-part {
+                padding: 15px 20px;
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .quick-facts {
+            padding: 0 1em;
+            .fact-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                h4 {
+                    font-size: 30px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .why-choose-us, .services {
+            padding: 1.5em;
+        }
+    }
+}
