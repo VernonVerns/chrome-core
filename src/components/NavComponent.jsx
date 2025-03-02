@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import LogoImg from '../assets/imgs/logo.png';
 
 const NavComponent = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling menu visibility
@@ -15,7 +16,9 @@ const NavComponent = () => {
     return (
         <div id='navigation_bar'>
             <div className='nav-brand'>
-                <Link to="/" className='word-logo' onClick={closeMenu}>ChromeCore</Link>
+                <Link to="/" className='word-logo' onClick={closeMenu}>
+                    <img src={LogoImg} className='img-logo' alt="Company Logo" />
+                </Link>
             </div>
             <button className='menu-toggle-btn' onClick={toggleMenu}>
                 <i className='bi bi-list'></i>
