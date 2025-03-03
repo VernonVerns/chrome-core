@@ -41,12 +41,11 @@ const lambdaUrl =
   "https://vzv5ij6xjowamkf3smddvqfhly0pecfm.lambda-url.af-south-1.on.aws/";
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    fullname: "",
+    name: "",
     email: "",
     subject: "",
     message: "",
-  });
-
+  }); 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [alertMessage, setAlertMessage] = useState(null);
   const [alertType, setAlertType] = useState(null); // 'success' or 'error'
@@ -67,7 +66,7 @@ const ContactPage = () => {
 
       setAlertMessage("Message sent successfully!");
       setAlertType("success");
-      setFormData({ fullname: "", email: "", subject: "", message: "" }); // Reset form
+      setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
     } catch (error) {
       setAlertMessage(
         error.response?.data?.message ||
@@ -83,7 +82,7 @@ const ContactPage = () => {
     <div id="contact_page">
       <PageHeroComponent
         pageTitle="Contact us"
-        shortDesc="We’re here to assist with any questions or inquiries. Choose the category below that best describes your needs, and our team will ensure your message reaches the right place."
+        shortDesc="We're here to assist with any questions or inquiries. Choose the category below that best describes your needs, and our team will ensure your message reaches the right place."
         path="Contact"
       />
       <div className="contact-cards">
@@ -143,10 +142,10 @@ const ContactPage = () => {
               <form onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  name="fullname"
-                  id="fullname"
+                  name="name"
+                  id="name"
                   placeholder="Your Name"
-                  value={formData.fullname}
+                  value={formData.name}
                   onChange={handleChange}
                   required
                 />
