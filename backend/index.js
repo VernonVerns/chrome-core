@@ -3,17 +3,17 @@ AWS.config.update({ region: "af-south-1" }); // Change region if necessary
 const ses = new AWS.SES();
 
 exports.handler = async (event) => {
-    try {
-        const { name, email, subject, message } = JSON.parse(event.body);
-        
-        if (!name || !email || !subject || !message) {
-            return {
-                statusCode: 400,
-                body: JSON.stringify({ error: "All fields are required." })
-            };
-        }
+  try {
+    const { name, email, subject, message } = JSON.parse(event.body);
 
-        const emailHtml = `
+    if (!name || !email || !subject || !message) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: "All fields are required." }),
+      };
+    }
+
+    const emailHtml = `
             <!DOCTYPE html>
             <html lang="en">
             <head>
@@ -46,31 +46,31 @@ exports.handler = async (event) => {
             </body>
             </html>`;
 
-        const params = {
-            Destination: {
-                ToAddresses: ["fezekileplaatyi@myplusplus.com"], // Replace with actual recipient email
-            },
-            Message: {
-                Body: {
-                    Html: { Charset: "UTF-8", Data: emailHtml },
-                    Text: { Charset: "UTF-8", Data: message }
-                },
-                Subject: { Charset: "UTF-8", Data: subject }
-            },
-            Source: "fezekileplaatyi@myplusplus.com", // Replace with a verified email in SES
-        };
+    const params = {
+      Destination: {
+        ToAddresses: ["fezekileplaatyi@myplusplus.com"],
+      },
+      Message: {
+        Body: {
+          Html: { Charset: "UTF-8", Data: emailHtml },
+          Text: { Charset: "UTF-8", Data: message },
+        },
+        Subject: { Charset: "UTF-8", Data: subject },
+      },
+      Source: "fezekileplaatyi@myplusplus.com",
+    };
 
-        await ses.sendEmail(params).promise();
-        
-        return {
-            statusCode: 200,
-            body: JSON.stringify({ message: "Email sent successfully!" })
-        };
-    } catch (error) {
-        console.error("Error sending email:", error);
-        return {
-            statusCode: 500,
-            body: JSON.stringify({ error: "Failed to send email." })
-        };
-    }
+    await ses.sendEmail(params).promise();
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Email sent successfully!" }),
+    };
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "Failed to send email." }),
+    };
+  }
 };
